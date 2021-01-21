@@ -25,6 +25,34 @@ import CerseiLannisterHouseCardAbility from "./CerseiLannisterHouseCardAbility";
 import TheBlackfishHouseCardAbility from "./TheBlackfishHouseCardAbility";
 import RobbStarkHouseCardAbility from "./RobbStarkHouseCardAbility";
 
+// A Dance with Dragons House cards
+// Baratheon
+import ManceRayderHouseCardAbility from "./ManceRayderHouseCardAbility";
+import MelisandreAdwdHouseCardAbility from "./MelisandreAdwdHouseCardAbility";
+import JonSnowAdwdHouseCardAbility from "./JonSnowAdwdHouseCardAbility";
+import StannisBaratheonAdwdHouseCardAbility from "./StannisBaratheonAdwdHouseCardAbility";
+// Martell
+import QuentynMartellHouseCardAbility from "./QuentynMartellHouseCardAbility";
+import DoranMartellAdwdHouseCardAbility from "./DoranMartellAdwdHouseCardAbility";
+import GerrisDrinkwaterHouseCardAbility from "./GerrisDrinkwaterHouseCardAbility";
+// Stark
+import ReekAdwdHouseCardAbility from "./ReekAdwdHouseCardAbility";
+import WalderFreyAdwdHouseCardAbility from "./WalderFreyAdwdHouseCardAbility";
+import RamsayBoltonAdwdHouseCardAbility from "./RamsayBoltonAdwdHouseCardAbility";
+// Greyjoy
+import EuronCrowsEyeAdwdHouseCardAbility from "./EuronCrowsEyeAdwdHouseCardAbility";
+import RodrikTheReaderAdwdHouseCardAbility from "./RodrikTheReaderAdwdHouseCardAbility";
+import QuarlTheMaidAdwdHouseCardAbility from "./QuarlTheMaidAdwdHouseCardAbility";
+import AeronDamphairAdwdHouseCardAbility from "./AeronDamphairAdwdHouseCardAbility";
+// Lannister
+import SerIlynPayneAdwdHouseCardAbility from "./SerIlynPayneAdwdHouseCardAbility";
+import SerAddamMarbrandAdwdHouseCardAbility from "./SerAddamMarbrandAdwdHouseCardAbility";
+import QyburnAdwdHouseCardAbility from "./QyburnAdwdHouseCardAbility";
+// Tyrell
+import PaxterRedwyneAdwdHouseCardAbility from "./PaxterRedwyneAdwdHouseCardAbility";
+import MargaeryTyrellAdwdHouseCardAbility from "./MargaeryTyrellAdwdHouseCardAbility";
+import QueenOfThornsAdwdHouseCardAbility from "./QueenOfThornsAdwdHouseCardAbility";
+
 export const theonGreyjoy = new TheonGreyjoyHouseCardAbility(
     "theon-greyjoy",
     "If you are defending an area that contains either a Stronghold or a Castle,"
@@ -142,6 +170,94 @@ export const robbStark = new RobbStarkHouseCardAbility(
     + " You must choose a legal area where your opponent loses the fewest units."
 );
 
+// A Dance with Dragons House Cards
+// Baratheon
+export const manceRayder = new ManceRayderHouseCardAbility(
+    "mance-rayder",
+    "Your final combat strength is equal to the current position of the Wilding"
+    + " Threat token."
+);
+export const jonSnowAdwd = new JonSnowAdwdHouseCardAbility(
+    "jon-snow-adwd",
+    "Needs fixing"
+);
+export const melisandreAdwd = new MelisandreAdwdHouseCardAbility(
+    "melisandre-adwd",
+    "Needs fixing"
+);
+export const stannisBaratheonAdwd = new StannisBaratheonAdwdHouseCardAbility(
+    "stannis-baratheon-adwd",
+    "Needs fixing"
+);
+// Martell
+export const quentynMartell = new QuentynMartellHouseCardAbility(
+    "quentyn-martell",
+    "For each House card in your discard pile, this card gains +1 combat strength."
+);
+export const gerrisDrinkwater = new GerrisDrinkwaterHouseCardAbility(
+    "ser-gerris-drinkwater",
+    "Needs fixing"
+);
+export const doranMartellAdwd = new DoranMartellAdwdHouseCardAbility(
+    "doran-martell-adwd",
+    "Needs fixing"
+);
+// Stark
+export const reekAdwd = new ReekAdwdHouseCardAbility(
+    "reek-adwd",
+    "Needs fixing"
+);
+export const walderFreyAdwd = new WalderFreyAdwdHouseCardAbility(
+    "walder-frey-adwd",
+    "Needs fixing"
+);
+export const ramsayBoltonAdwd = new RamsayBoltonAdwdHouseCardAbility(
+    "ramsay-bolton-adwd",
+    "Needs fixing"
+);
+//Greyjoy
+export const euronCrowsEyeAdwd = new EuronCrowsEyeAdwdHouseCardAbility(
+    "euron-crows-eye-adwd",
+    "Needs fixing"
+);
+export const rodrikTheReaderAdwd = new RodrikTheReaderAdwdHouseCardAbility(
+    "rodrik-the-reader-adwd",
+    "Needs fixing"
+);
+export const quarlTheMaidAdwd = new QuarlTheMaidAdwdHouseCardAbility(
+    "quarl-the-maid-adwd",
+    "Needs fixing"
+);
+export const aeronDamphairAdwd = new AeronDamphairAdwdHouseCardAbility(
+    "aeron-damphair-adwd",
+    "Needs fixing"
+);
+// Lannister
+export const serIlynPayneAdwd = new SerIlynPayneAdwdHouseCardAbility(
+    "ser-ilyn-payne-adwd",
+    "Needs fixing"
+);
+export const serAddamAdwd = new SerAddamMarbrandAdwdHouseCardAbility(
+    "ser-addam-marbrand-adwd",
+    "Needs fixing"
+);
+export const qyburnAdwd = new QyburnAdwdHouseCardAbility(
+    "qyburn-adwd",
+    "Needs fixing"
+);
+// Tyrell
+export const paxterRedwyneAdwd = new PaxterRedwyneAdwdHouseCardAbility(
+    "paxter-redwyne-adwd",
+    "Needs fixing"
+);
+export const queenOfThornsAdwd = new QueenOfThornsAdwdHouseCardAbility(
+    "queen-of-thorns-adwd",
+    "Needs fixing"
+);
+export const margaeryTyrellAdwd = new MargaeryTyrellAdwdHouseCardAbility(
+    "margaery-tyrell-adwd",
+    "Needs fixing"
+);
 const houseCardAbilities = new BetterMap<string, HouseCardAbility>([
     [theonGreyjoy.id, theonGreyjoy],
     [serDavosSeaworth.id, serDavosSeaworth],
@@ -167,6 +283,29 @@ const houseCardAbilities = new BetterMap<string, HouseCardAbility>([
     [cerseiLannister.id, cerseiLannister],
     [theBlackfish.id, theBlackfish],
     [robbStark.id, robbStark],
+    // A Dance with Dragons House Cards
+    [manceRayder.id, manceRayder],
+    [quentynMartell.id, quentynMartell],
+    [doranMartellAdwd.id, doranMartellAdwd],
+    [gerrisDrinkwater.id, gerrisDrinkwater],
+    [stannisBaratheonAdwd.id, stannisBaratheonAdwd],
+    [melisandreAdwd.id, melisandreAdwd],
+    [jonSnowAdwd.id, jonSnowAdwd],
+    [reekAdwd.id, reekAdwd],
+    [walderFreyAdwd.id, walderFreyAdwd],
+    [ramsayBoltonAdwd.id, ramsayBoltonAdwd],
+    [euronCrowsEyeAdwd.id, euronCrowsEyeAdwd],
+    [rodrikTheReaderAdwd.id, rodrikTheReaderAdwd],
+    [quarlTheMaidAdwd.id, quarlTheMaidAdwd],
+    [aeronDamphairAdwd.id, aeronDamphairAdwd],
+    [serIlynPayneAdwd.id,serIlynPayneAdwd],
+    [serAddamAdwd.id,serAddamAdwd],
+    [qyburnAdwd.id, qyburnAdwd],
+    [paxterRedwyneAdwd.id, paxterRedwyneAdwd],
+    [queenOfThornsAdwd.id, queenOfThornsAdwd],
+    [margaeryTyrellAdwd.id, margaeryTyrellAdwd]
+
+
 ]);
 
 export default houseCardAbilities;

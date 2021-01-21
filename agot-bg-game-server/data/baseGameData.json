@@ -1,4 +1,5 @@
 {
+  "name": "2nd Edition Base Game",
   "structuresCountNeededToWin": 7,
   "maxTurns": 10,
   "tracks": {
@@ -399,39 +400,40 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "tywin-lannister": {
-          "name": "Tywin Lannister",
-          "combatStrength": 4,
-          "ability": "tywin-lannister"
-        },
-        "ser-gregor-clegane": {
-          "name": "Ser Gregor Clegane",
-          "combatStrength": 3,
-          "swordIcons": 3
-        },
-        "ser-jaime-lannister": {
+        "ser-jaime-lannister-adwd": {
           "name": "Ser Jaime Lannister",
+          "combatStrength": 4,
+          "swordIcons": 1,
+          "towerIcons": 1
+        },
+        "ser-kevan-lannister-adwd": {
+          "name": "Ser Kevan Lannister",
+          "combatStrength": 3,
+          "towerIcons": 1
+        },
+        "ser-ilyn-payne-adwd": {
+          "name": "Ser Ilyn Payne",
+          "combatStrength": 2,
+          "ability": "ser-ilyn-payne-adwd"
+        },
+        "daven-lannister-adwd": {
+          "name": "Daven Lannister",
           "combatStrength": 2,
           "swordIcons": 1
         },
-        "the-hound": {
-          "name": "The hound",
-          "combatStrength": 2,
-          "towerIcons": 2
-        },
-        "ser-kevan-lannister": {
-          "name": "Ser Kevan Lannister",
+        "ser-addam-marbrand-adwd": {
+          "name": "Ser Addam Marbrand",
           "combatStrength": 1,
-          "ability": "ser-kevan-lannister"
+          "ability": "ser-addam-marbrand-adwd"
         },
-        "tyrion-lannister": {
-          "name": "Tyrion Lannister",
-          "combatStrength": 1,
-          "ability": "tyrion-lannister"
-        },
-        "cersei-lannister": {
+        "cersei-lannister-adwd": {
           "name": "Cersei Lannister",
-          "ability": "cersei-lannister"
+          "combatStrength": 1,
+          "towerIcons": 1
+        },
+        "qyburn-adwd": {
+          "name": "Qyburn",
+          "ability": "qyburn-adwd"
         }
       },
       "supplyLevel": 2
@@ -446,39 +448,39 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "eddard-stark": {
-          "name": "Eddard Stark",
-          "combatStrength": 4,
-          "swordIcons": 2
-        },
-        "robb-stark": {
-          "name": "Robb Stark",
-          "combatStrength": 3,
-          "ability": "robb-stark"
-        },
-        "roose-bolton": {
-          "name": "Roose Bolton",
-          "combatStrength": 2,
-          "ability": "roose-bolton"
-        },
-        "greatjon-umber": {
-          "name": "Greatjon Umber",
+        "black-walder-adwd": {
+          "name": "Black Walder",
           "combatStrength": 2,
           "swordIcons": 1
         },
-        "ser-rodrick-cassel": {
-          "name": "Ser Rodrick Cassel",
-          "combatStrength": 1,
-          "towerIcons": 2
+        "roose-bolton-adwd": {
+          "name": "Roose Bolton",
+          "combatStrength": 4,
+          "swordIcons": 1
         },
-        "the-blackfish": {
-          "name": "The Blackfish",
+        "damon-dance-for-me-adwd": {
+          "name": "Damon Dance-For-Me",
           "combatStrength": 1,
-          "ability": "the-blackfish"
+          "swordIcons": 1
         },
-        "catelyn-stark": {
-          "name": "Catelyn Stark",
-          "ability": "catelyn-stark"
+        "steelshanks-walton-adwd": {
+          "name": "Steelshanks Walton",
+          "combatStrength": 2,
+          "towerIcons": 1
+        },
+        "ramsay-bolton-adwd": {
+          "name": "Ramsay Bolton",
+          "combatStrength": 3,
+          "ability": "ramsay-bolton-adwd"
+        },
+        "reek-adwd": {
+          "name": "Reek",
+          "combatStrength": 0,
+          "ability": "reek-adwd"
+        },
+        "walder-frey-adwd": {
+          "name": "Walder Frey",
+          "ability": "walder-frey-adwd"
         }
       },
       "supplyLevel": 1
@@ -493,40 +495,39 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "stannis-baratheon": {
+        "stannis-baratheon-adwd": {
           "name": "Stannis Baratheon",
           "combatStrength": 4,
-          "ability": "stannis-baratheon"
+          "ability": "stannis-baratheon-adwd"
         },
-        "renly-baratheon": {
-          "name": "Renly Baratheon",
+        "jon-snow-adwd": {
+          "name": "Jon Snow",
           "combatStrength": 3,
-          "ability": "renly-baratheon"
+          "ability": "jon-snow-adwd"
         },
-        "ser-davos-seaworth": {
+        "bastard-of-nightsong": {
+          "name": "Bastard of Nightsong",
+          "combatStrength": 2,
+          "towerIcons": 1
+        },
+        "ser-davos-seaworth-adwd": {
           "name": "Ser Davos Seaworth",
-          "combatStrength": 2,
-          "ability": "ser-davos-seaworth"
-        },
-        "brienne-of-tarth": {
-          "name": "Brienne of Tarth",
-          "combatStrength": 2,
+          "combatStrength": 1,
           "swordIcons": 1,
           "towerIcons": 1
         },
-        "salladhor-saan": {
-          "name": "Salladhor Saan",
-          "combatStrength": 1,
-          "ability": "salladhor-saan"
-        },
-        "melisandre": {
-          "name": "Melisandre",
+        "axel-florent": {
+          "name": "Ser Axell Florent",
           "combatStrength": 1,
           "swordIcons": 1
         },
-        "patchface": {
-          "name": "Patchface",
-          "ability": "patchface"
+        "melisandre-adwd": {
+          "name": "Melsisandre",
+          "ability": "melisandre-adwd"
+        },
+        "mance-rayder": {
+          "name": "Mance Rayder",
+          "ability": "mance-rayder"
         }
       },
       "supplyLevel": 2
@@ -541,40 +542,39 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "euron-crows-eye": {
+        "euron-crows-eye-adwd": {
           "name": "Euron Crow's Eye",
           "combatStrength": 4,
-          "swordIcons": 1
+          "ability": "euron-crows-eye-adwd"
         },
-        "victarion-greyjoy": {
+        "victarion-greyjoy-adwd": {
           "name": "Victarion Greyjoy",
           "combatStrength": 3,
-          "ability": "victarion-greyjoy"
+          "swordIcons": 2
         },
-        "balon-greyjoy": {
-          "name": "Balon Greyjoy",
+        "rodrik-the-reader-adwd": {
+          "name": "Rodrik the Reader",
           "combatStrength": 2,
-          "ability": "balon-greyjoy"
+          "ability": "rodrik-the-reader-adwd"
         },
-        "theon-greyjoy": {
-          "name": "Theon Greyjoy",
+        "asha-greyjoy-adwd": {
+          "name": "Asha Greyjoy",
           "combatStrength": 2,
-          "ability": "theon-greyjoy"
-        },
-        "dagmar-cleftjaw": {
-          "name": "Dagmar Cleftjaw",
-          "combatStrength": 1,
-          "swordIcons": 1,
           "towerIcons": 1
         },
-        "asha-greyjoy": {
-          "name": "Asha Greyjoy",
+        "quarl-the-maid-adwd": {
+          "name": "Quarl the Maid",
           "combatStrength": 1,
-          "ability": "asha-greyjoy"
+          "ability": "quarl-the-maid-adwd"
         },
-        "aeron-damphair": {
+        "ser-harras-harlaw-adwd": {
+          "name": "Ser Harras Harlaw",
+          "combatStrength": 1,
+          "swordIcons": 1
+        },
+        "aeron-damphair-adwd": {
           "name": "Aeron Damphair",
-          "ability": "aeron-damphair"
+          "ability": "aeron-damphair-adwd"
         }
       },
       "supplyLevel": 2
@@ -589,40 +589,40 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "the-red-viper": {
-          "name": "The Red Viper",
-          "combatStrength": 4,
-          "swordIcons": 2,
+        "bastard-of-godsgrace-adwd": {
+          "name": "Bastard of Godsgrace",
+          "combatStrength": 2,
           "towerIcons": 1
         },
-        "areo-hotah": {
+        "ser-gerris-drinkwater": {
+          "name": "Ser Gerris Drinkwater",
+          "combatStrength": 1,
+          "ability": "ser-gerris-drinkwater"
+        },
+        "quentyn-martell": {
+          "name": "Quentyn Martell",
+          "combatStrength": 1,
+          "ability": "quentyn-martell"
+        },
+        "areo-hotah-adwd": {
           "name": "Areo Hotah",
           "combatStrength": 3,
-          "towerIcons": 1
+          "towerIcons": 2
         },
-        "darkstar": {
-          "name": "Darkstar",
+        "big-man-adwd": {
+          "name": "Big Man",
           "combatStrength": 2,
           "swordIcons": 1
         },
-        "obara-sand": {
-          "name": "Obara Sand",
-          "combatStrength": 2,
-          "swordIcons": 1
-        },
-        "arianne-martell": {
-          "name": "Arianne Martell",
-          "combatStrength": 1,
-          "ability": "arianne-martell"
-        },
-        "nymeria-sand": {
-          "name": "Nymeria Sand",
-          "combatStrength": 1,
-          "ability": "nymeria-sand"
-        },
-        "doran-martell": {
+        "doran-martell-adwd": {
           "name": "Doran Martell",
-          "ability": "doran-martell"
+          "combatStrength": 4,
+          "ability": "doran-martell-adwd"
+        },
+        "nymeria-sand-adwd": {
+          "name": "Nymeria Sand",
+          "swordIcons": 1,
+          "towerIcons": 1
         }
       },
       "supplyLevel": 2
@@ -637,39 +637,40 @@
         "siege-engine": 2
       },
       "houseCards": {
-        "mace-tyrell": {
+        "mace-tyrell-adwd": {
           "name": "Mace Tyrell",
           "combatStrength": 4,
-          "ability": "mace-tyrell"
+          "towerIcons": 1,
+          "swordIcons": 1
         },
-        "ser-loras-tyrell": {
-          "name": "Ser Loras Tyrell",
-          "combatStrength": 3,
-          "ability": "ser-loras-tyrell"
-        },
-        "randyll-tarly": {
+        "randyll-tarly-adwd": {
           "name": "Randyll Tarly",
+          "combatStrength": 3,
+          "swordIcons": 2
+        },
+        "willas-tyrell-adwd": {
+          "name": "Willas Tyrell",
+          "combatStrength": 2,
+          "towerIcons": 1
+        },
+        "ser-jon-fossoway-adwd": {
+          "name": "Ser Jon Fossoway",
           "combatStrength": 2,
           "swordIcons": 1
         },
-        "ser-garlan-tyrell": {
-          "name": "Ser Garlan Tyrell",
-          "combatStrength": 2,
-          "swordIcons": 2
-        },
-        "margaery-tyrell": {
-          "name": "Margaery Tyrell",
+        "paxter-redwyne-adwd": {
+          "name": "Paxter Redwyne",
           "combatStrength": 1,
-          "towerIcons": 1
+          "ability": "paxter-redwyne-adwd"         
         },
-        "alester-florent": {
-          "name": "Alester Florent",
-          "combatStrength": 1,
-          "towerIcons": 1
-        },
-        "queen-of-thorns": {
+        "queen-of-thorns-adwd": {
           "name": "Queen of Thorns",
-          "ability": "queen-of-thorns"
+          "combatStrength": 1,
+          "ability": "queen-of-thorns-adwd"        
+        },
+        "margaery-tyrell-adwd": {
+          "name": "Margaery Tyrell",
+          "ability": "margaery-tyrell-adwd"
         }
       },
       "supplyLevel": 2
