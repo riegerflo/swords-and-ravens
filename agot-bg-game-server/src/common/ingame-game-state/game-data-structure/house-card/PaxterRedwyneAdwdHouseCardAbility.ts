@@ -6,7 +6,6 @@ import Unit from "../Unit";
 import {ship} from "../unitTypes";
 import {sea} from "../../game-data-structure/regionTypes";
 
-
 export default class PaxterRedwyneAdwdHouseCardAbility extends HouseCardAbility {
     
     modifyUnitCombatStrength(combat: CombatGameState, house: House, _houseCard: HouseCard, _houseSide: House, affectedUnit: Unit, _support: boolean, _currentStrength: number): number {
