@@ -1,19 +1,20 @@
 import HouseCardAbility from "./HouseCardAbility";
-import HouseCard, { HouseCardState } from "./HouseCard";
+import HouseCard from "./HouseCard";
 import House from "../House";
-import CombatGameState from "../../action-game-state/resolve-march-order-game-state/combat-game-state/CombatGameState";
+import AfterWinnerDeterminationGameState
+    from "../../action-game-state/resolve-march-order-game-state/combat-game-state/post-combat-game-state/after-winner-determination-game-state/AfterWinnerDeterminationGameState";
+import GerrisDrinkwaterAbilityGameState
+    from "../../action-game-state/resolve-march-order-game-state/combat-game-state/post-combat-game-state/after-winner-determination-game-state/gerris-drinkwater-ability-game-state/GerrisDrinkwaterAbilityGameState";
 
 export default class GerrisDrinkwaterHouseCardAbility extends HouseCardAbility {
 
-    modifyHouseCardCombatStrength(_combat: CombatGameState, _house: House, _houseCard: HouseCard, _affectedHouseCard: HouseCard): number {
-        var discardedCards = 0;
-
-        _house.houseCards.forEach((card, _) =>{
-        if (card.state == HouseCardState.USED) {
-            discardedCards += 1;
-            }
-        });
-
-        return _houseCard == _affectedHouseCard ? discardedCards : 0;
+  afterWinnerDetermination(afterWinnerDetermination: AfterWinnerDeterminationGameState, house: House, _houseCard: HouseCard): void {
+        if (afterWinnerDetermination.postCombatGameState.winner == house) {
+            afterWinnerDetermination.childGameState
+                .setChildGameState(new GerrisDrinkwaterAbilityGameState(afterWinnerDetermination.childGameState))
+                .firstStart(house);
+            return;
+        }
+        afterWinnerDetermination.childGameState.onHouseCardResolutionFinish(house);
     }
 }

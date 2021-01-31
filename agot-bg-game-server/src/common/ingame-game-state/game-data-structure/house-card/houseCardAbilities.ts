@@ -196,7 +196,7 @@ export const quentynMartell = new QuentynMartellHouseCardAbility(
 );
 export const gerrisDrinkwater = new GerrisDrinkwaterHouseCardAbility(
     "ser-gerris-drinkwater",
-    "Needs fixing"
+    "If you win this combat, you may move one position higher on one Influence track of your choice."
 );
 export const doranMartellAdwd = new DoranMartellAdwdHouseCardAbility(
     "doran-martell-adwd",

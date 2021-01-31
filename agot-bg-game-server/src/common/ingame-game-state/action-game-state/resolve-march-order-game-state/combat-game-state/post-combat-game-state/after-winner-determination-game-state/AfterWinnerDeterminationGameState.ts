@@ -10,12 +10,13 @@ import {ClientMessage} from "../../../../../../../messages/ClientMessage";
 import RenlyBaratheonAbilityGameState, { SerializedRenlyBaratheonAbilityGameState } from "./renly-baratheon-ability-game-state/RenlyBaratheonAbilityGameState";
 import PostCombatGameState from "../PostCombatGameState";
 import CerseiLannisterAbilityGameState, {SerializedCerseiLannisterAbilityGameState} from "./cersei-lannister-ability-game-state/CerseiLannisterAbilityGameState";
+import GerrisDrinkwaterAbilityGameState, { SerializedGerrisDrinkwaterAbilityGameState } from "./gerris-drinkwater-ability-game-state/GerrisDrinkwaterAbilityGameState";
 
 export default class AfterWinnerDeterminationGameState extends GameState<
     PostCombatGameState,
     HouseCardResolutionGameState<
         AfterWinnerDeterminationGameState,
-        RenlyBaratheonAbilityGameState | CerseiLannisterAbilityGameState
+        RenlyBaratheonAbilityGameState | CerseiLannisterAbilityGameState | GerrisDrinkwaterAbilityGameState
     >>
 {
     get postCombatGameState(): PostCombatGameState {
@@ -82,6 +83,8 @@ export default class AfterWinnerDeterminationGameState extends GameState<
                 return RenlyBaratheonAbilityGameState.deserializeFromServer(houseCardResolution, data);
             case "cersei-lannister-ability":
                 return CerseiLannisterAbilityGameState.deserializeFromServer(houseCardResolution, data);
+            case "gerris-drinkwater-ability":
+                return GerrisDrinkwaterAbilityGameState.deserializeFromServer(houseCardResolution, data);
         }
     }
 }
@@ -89,6 +92,6 @@ export default class AfterWinnerDeterminationGameState extends GameState<
 export interface SerializedAfterWinnerDeterminationGameState {
     type: "after-winner-determination";
     childGameState: SerializedHouseCardResolutionGameState<
-        SerializedRenlyBaratheonAbilityGameState | SerializedCerseiLannisterAbilityGameState
+        SerializedRenlyBaratheonAbilityGameState | SerializedCerseiLannisterAbilityGameState | SerializedGerrisDrinkwaterAbilityGameState
     >;
 }

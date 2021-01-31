@@ -534,7 +534,7 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                         {houseCard.name}</strong> from house <strong>{affectedHouse.name}</strong>.
                 </>;
 
-            case "doran-used":
+            case "doran-used": {
                 house = this.game.houses.get(data.house);
                 affectedHouse = this.game.houses.get(data.affectedHouse);
                 const influenceTrack = this.game.getNameInfluenceTrack(data.influenceTrack);
@@ -543,18 +543,27 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                     <strong>Doran Martell</strong>: <strong>{house.name}</strong> decided to move <strong>
                         {affectedHouse.name}</strong> to the bottom of the <strong>{influenceTrack}</strong> track.
                 </>;
+            }
+            case "gerris-used": {
+                const house = this.game.houses.get(data.house);
+                const influenceTrack = this.game.getNameInfluenceTrack(data.influenceTrack);
 
-            case "tyrion-lannister-choice-made":
-                house = this.game.houses.get(data.house);
-                affectedHouse = this.game.houses.get(data.affectedHouse);
+                return <>
+                    <strong>Ser Gerris Drinkwater</strong>: <strong>{house.name}</strong> decided to move 
+                        up one position on the <strong>{influenceTrack}</strong> track.
+                </>;
+            }
+            case "tyrion-lannister-choice-made": {
+                const house = this.game.houses.get(data.house);
+                const affectedHouse = this.game.houses.get(data.affectedHouse);
                 const chooseToReplace = data.chooseToReplace;
 
                 return <>
                     <strong>Tyrion Lannister</strong>: <strong>{house.name}</strong> {!chooseToReplace && "didn't "}force{chooseToReplace && "d"} <strong>
                         {affectedHouse.name}</strong> to choose a new House card.
                 </>;
-
-            case "tyrion-lannister-house-card-replaced":
+            }
+            case "tyrion-lannister-house-card-replaced": {
                 affectedHouse = this.game.houses.get(data.affectedHouse);
                 const newHouseCard = data.newHouseCard ? affectedHouse.houseCards.get(data.newHouseCard) : null;
 
@@ -563,7 +572,7 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                 ) : (
                     <><strong>{affectedHouse.name}</strong> had no other available House card</>
                 );
-
+            }
             case "arianne-martell-prevent-movement":
                 const enemyHouse = this.game.houses.get(data.enemyHouse);
 
