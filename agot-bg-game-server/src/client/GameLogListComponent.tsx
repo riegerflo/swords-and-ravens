@@ -581,6 +581,14 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                     cards ({joinReactNodes(returnedHouseCards.map(hc => <strong key={hc.id}>{hc.name}</strong>), ", ")}).
                 </>;
 
+            case "reek-house-cards-returned":
+                house = this.game.houses.get(data.house);    
+                const returnedHouseCards2 = data.houseCards.map(hcid => house.houseCards.get(hcid));
+                return <>
+                    <strong>Reek</strong>: <strong>Stark</strong> took back discarded House
+                    cards ({joinReactNodes(returnedHouseCards2.map(hc => <strong key={hc.id}>{hc.name}</strong>), ", ")}).
+                </>;
+            
             case "loras-tyrell-attack-order-moved":
                 const order = orders.get(data.order);
                 const embattledRegion = this.world.regions.get(data.region);

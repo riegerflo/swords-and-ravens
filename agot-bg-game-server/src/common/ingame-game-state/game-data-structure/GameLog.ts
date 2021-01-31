@@ -14,7 +14,7 @@ export type GameLogData = TurnBegin | SupportDeclared | SupportRefused | Attack 
     | HouseCardAbilityNotUsed | PatchfaceUsed | DoranUsed
     | TyrionLannisterHouseCardReplaced | TyrionLannisterChoiceMade
     | ArianneMartellPreventMovement | LorasTyrellAttackOrderMoved | TywinLannisterPowerTokensGained
-    | RooseBoltonHouseCardsReturned | QueenOfThornsOrderRemoved | QueenOfThornsNoOrderAvailable
+    | RooseBoltonHouseCardsReturned | ReekHouseCardsReturned | QueenOfThornsOrderRemoved | QueenOfThornsNoOrderAvailable
     | RenlyBaratheonNoFootmanAvailable | RenlyBaratheonNoKnightAvailable | RenlyBaratheonFootmanUpgradedToKnight
     | MaceTyrellNoFootmanAvailable | MaceTyrellCasualtiesPrevented | MaceTyrellFootmanKilled
     | CerseiLannisterNoOrderAvailable | CerseiLannisterOrderRemoved | RobbStarkRetreatRegionOverriden
@@ -303,6 +303,12 @@ interface ArianneMartellPreventMovement {
 
 interface RooseBoltonHouseCardsReturned {
     type: "roose-bolton-house-cards-returned";
+    house: string;
+    houseCards: string[];
+}
+
+interface ReekHouseCardsReturned {
+    type: "reek-house-cards-returned";
     house: string;
     houseCards: string[];
 }
