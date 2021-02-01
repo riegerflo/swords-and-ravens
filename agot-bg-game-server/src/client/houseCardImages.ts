@@ -168,7 +168,7 @@ const houseCardImages = new BetterMap([
     ["euron-crows-eye-adwd", eEyeImage],
     ["ser-harras-harlaw-adwd", serHarlawImage],
     ["victarion-greyjoy-adwd", vGreyjoyAdwdImage],
-    ["quarl-the-maid-adwd", quarlMaidImage],
+    ["qarl-the-maid-adwd", quarlMaidImage],
     // Lannister
     ["ser-jaime-lannister-adwd",lannister1Image],
     ["ser-kevan-lannister-adwd",lannister2Image],
