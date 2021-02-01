@@ -11,12 +11,14 @@ import RenlyBaratheonAbilityGameState, { SerializedRenlyBaratheonAbilityGameStat
 import PostCombatGameState from "../PostCombatGameState";
 import CerseiLannisterAbilityGameState, {SerializedCerseiLannisterAbilityGameState} from "./cersei-lannister-ability-game-state/CerseiLannisterAbilityGameState";
 import GerrisDrinkwaterAbilityGameState, { SerializedGerrisDrinkwaterAbilityGameState } from "./gerris-drinkwater-ability-game-state/GerrisDrinkwaterAbilityGameState";
+import SerIlynPayneAbilityGameState, { SerializedSerIlynPayneAbilityGameState } from "./ser-ilyn-payne-ability-game-state/SerIlynPayneAbilityGameState";
 
 export default class AfterWinnerDeterminationGameState extends GameState<
     PostCombatGameState,
     HouseCardResolutionGameState<
         AfterWinnerDeterminationGameState,
-        RenlyBaratheonAbilityGameState | CerseiLannisterAbilityGameState | GerrisDrinkwaterAbilityGameState
+        RenlyBaratheonAbilityGameState | CerseiLannisterAbilityGameState | GerrisDrinkwaterAbilityGameState |
+        SerIlynPayneAbilityGameState
     >>
 {
     get postCombatGameState(): PostCombatGameState {
@@ -85,6 +87,8 @@ export default class AfterWinnerDeterminationGameState extends GameState<
                 return CerseiLannisterAbilityGameState.deserializeFromServer(houseCardResolution, data);
             case "gerris-drinkwater-ability":
                 return GerrisDrinkwaterAbilityGameState.deserializeFromServer(houseCardResolution, data);
+            case "ser-ilyn-payne-ability":
+                return SerIlynPayneAbilityGameState.deserializeFromServer(houseCardResolution, data);
         }
     }
 }
@@ -92,6 +96,7 @@ export default class AfterWinnerDeterminationGameState extends GameState<
 export interface SerializedAfterWinnerDeterminationGameState {
     type: "after-winner-determination";
     childGameState: SerializedHouseCardResolutionGameState<
-        SerializedRenlyBaratheonAbilityGameState | SerializedCerseiLannisterAbilityGameState | SerializedGerrisDrinkwaterAbilityGameState
+        SerializedRenlyBaratheonAbilityGameState | SerializedCerseiLannisterAbilityGameState 
+        | SerializedGerrisDrinkwaterAbilityGameState | SerializedSerIlynPayneAbilityGameState
     >;
 }

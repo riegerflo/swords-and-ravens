@@ -690,6 +690,30 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                     in <strong>{region.name}</strong>.
                 </>;
 
+            case "ser-ilyn-payne-casualties-prevented":
+                house = this.game.houses.get(data.house);
+
+                return <>
+                    <strong>Ser Ilyn Payne</strong>: Casualties were prevented by <strong>The Blackfish</strong>.
+                </>;
+
+            case "ser-ilyn-payne-no-footman-available":
+                house = this.game.houses.get(data.house);
+
+                return <>
+                    <strong>Ser Ilyn Payne</strong>: No enemy Footman was available to be killed.
+                </>;
+
+            case "ser-ilyn-payne-footman-killed":
+                house = this.game.houses.get(data.house);
+                region = this.world.regions.get(data.region);
+
+                return <>
+                    <strong>Ser Ilyn Payne</strong>: <strong>{house.name}</strong> killed an enemy Footman
+                    in <strong>{region.name}</strong>.
+                </>;
+
+
             case "cersei-lannister-no-order-available":
                 return <>
                     <strong>Cersei Lannister</strong>: There were no Order tokens to be removed.

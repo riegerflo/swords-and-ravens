@@ -13,6 +13,9 @@ import CerseiLannisterAbilityComponent from "./CerseiLannisterAbilityComponent";
 import GerrisDrinkwaterAbilityGameState
     from "../../../common/ingame-game-state/action-game-state/resolve-march-order-game-state/combat-game-state/post-combat-game-state/after-winner-determination-game-state/gerris-drinkwater-ability-game-state/GerrisDrinkwaterAbilityGameState";
 import GerrisDrinkwaterAbilityComponent from "./GerrisDrinkwaterAbilityComponent";
+import SerIlynPayneAbilityGameState
+    from "../../../common/ingame-game-state/action-game-state/resolve-march-order-game-state/combat-game-state/post-combat-game-state/after-winner-determination-game-state/ser-ilyn-payne-ability-game-state/SerIlynPayneAbilityGameState";
+import SerIlynPayneAbilityComponent from "./SerIlynPayneAbilityComponent";
 
 @observer
 export default class AfterWinnerDeterminationComponent extends Component<GameStateComponentProps<AfterWinnerDeterminationGameState>> {
@@ -20,7 +23,8 @@ export default class AfterWinnerDeterminationComponent extends Component<GameSta
         return renderChildGameState({...this.props, gameState: this.props.gameState.childGameState}, [
             [RenlyBaratheonAbilityGameState, RenlyBaratheonAbilityComponent],
             [CerseiLannisterAbilityGameState, CerseiLannisterAbilityComponent],
-            [GerrisDrinkwaterAbilityGameState, GerrisDrinkwaterAbilityComponent]
+            [GerrisDrinkwaterAbilityGameState, GerrisDrinkwaterAbilityComponent],
+            [SerIlynPayneAbilityGameState, SerIlynPayneAbilityComponent]
         ]);
     }
 }

@@ -17,6 +17,7 @@ export type GameLogData = TurnBegin | SupportDeclared | SupportRefused | Attack 
     | RooseBoltonHouseCardsReturned | ReekHouseCardsReturned | QueenOfThornsOrderRemoved | QueenOfThornsNoOrderAvailable
     | RenlyBaratheonNoFootmanAvailable | RenlyBaratheonNoKnightAvailable | RenlyBaratheonFootmanUpgradedToKnight
     | MaceTyrellNoFootmanAvailable | MaceTyrellCasualtiesPrevented | MaceTyrellFootmanKilled
+    | SerIlynPayneNoFootmanAvailable | SerIlynPayneCasualtiesPrevented | SerIlynPayneFootmanKilled
     | CerseiLannisterNoOrderAvailable | CerseiLannisterOrderRemoved | RobbStarkRetreatRegionOverriden
     | RetreatRegionChosen | RetreatCasualtiesSuffered | RetreatFailed | SilenceAtTheWallExecuted
     | PreemptiveRaidChoiceDone | PreemptiveRaidTrackReduced | PreemptiveRaidUnitsKilled | PreemptiveRaidWildlingsAttack
@@ -380,6 +381,22 @@ interface MaceTyrellCasualtiesPrevented {
 
 interface MaceTyrellFootmanKilled {
     type: "mace-tyrell-footman-killed";
+    house: string;
+    region: string;
+}
+
+interface SerIlynPayneNoFootmanAvailable {
+    type: "ser-ilyn-payne-no-footman-available";
+    house: string;
+}
+
+interface SerIlynPayneCasualtiesPrevented {
+    type: "ser-ilyn-payne-casualties-prevented";
+    house: string;
+}
+
+interface SerIlynPayneFootmanKilled {
+    type: "ser-ilyn-payne-footman-killed";
     house: string;
     region: string;
 }
