@@ -11,13 +11,14 @@ import {ServerMessage} from "../../../../../../messages/ServerMessage";
 import DoranMartellAbilityGameState, {SerializedDoranMartellAbilityGameState} from "./doran-martell-ability-game-state/DoranMartellAbilityGameState";
 import AeronDamphairAbilityGameState, {SerializedAeronDamphairAbilityGameState} from "./aeron-damphair-ability-game-state/AeronDamphairAbilityGameState";
 import MaceTyrellAbilityGameState, {SerializedMaceTyrellAbilityGameState} from "./mace-tyrell-ability-game-state/MaceTyrellAbilityGameState";
+// import ReekAbilityGameState, {SerializedReekAbilityGameState} from "./reek-ability-game-state/ReekAbilityGameState";
 
 export default class ImmediatelyHouseCardAbilitiesResolutionGameState extends GameState<
     CombatGameState,
     HouseCardResolutionGameState<
         ImmediatelyHouseCardAbilitiesResolutionGameState,
         QueenOfThornsAbilityGameState | DoranMartellAbilityGameState | AeronDamphairAbilityGameState
-        | MaceTyrellAbilityGameState
+        | MaceTyrellAbilityGameState 
     >
 > {
     get combatGameState(): CombatGameState {
@@ -94,7 +95,6 @@ export default class ImmediatelyHouseCardAbilitiesResolutionGameState extends Ga
 export interface SerializedImmediatelyHouseCardAbilitiesResolutionGameState {
     type: "immediately-house-card-abilities-resolution";
     childGameState: SerializedHouseCardResolutionGameState<
-        SerializedQueenOfThornsAbilityGameState | SerializedDoranMartellAbilityGameState
-        | SerializedAeronDamphairAbilityGameState | SerializedMaceTyrellAbilityGameState
+        SerializedQueenOfThornsAbilityGameState | SerializedDoranMartellAbilityGameState | SerializedAeronDamphairAbilityGameState | SerializedMaceTyrellAbilityGameState
     >;
 }

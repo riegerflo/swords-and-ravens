@@ -177,7 +177,7 @@
       {
         "unitType": "knight",
         "house": "lannister",
-        "quantity": 5
+        "quantity": 2
       }
     ],
     "port-of-lannisport": [
@@ -194,10 +194,24 @@
         "quantity": 1
       }
     ],
+    "blackwater": [
+      {
+        "unitType": "knight",
+        "house": "lannister",
+        "quantity": 1
+      }
+    ],
     "stoney-sept": [
       {
         "unitType": "footman",
         "house": "lannister",
+        "quantity": 1
+      }
+    ],
+    "searoad-marches": [
+      {
+        "unitType": "knight",
+        "house": "tyrell",
         "quantity": 1
       }
     ],
@@ -404,12 +418,14 @@
           "name": "Ser Jaime Lannister",
           "combatStrength": 4,
           "swordIcons": 1,
-          "towerIcons": 1
+          "towerIcons": 1,
+          "ability": "ser-addam-marbrand-adwd"
         },
         "ser-kevan-lannister-adwd": {
           "name": "Ser Kevan Lannister",
           "combatStrength": 3,
-          "towerIcons": 1
+          "towerIcons": 1,
+          "ability": "ser-addam-marbrand-adwd"
         },
         "ser-ilyn-payne-adwd": {
           "name": "Ser Ilyn Payne",
@@ -419,7 +435,8 @@
         "daven-lannister-adwd": {
           "name": "Daven Lannister",
           "combatStrength": 2,
-          "swordIcons": 1
+          "swordIcons": 1,
+          "ability": "ser-addam-marbrand-adwd"
         },
         "ser-addam-marbrand-adwd": {
           "name": "Ser Addam Marbrand",
@@ -429,7 +446,8 @@
         "cersei-lannister-adwd": {
           "name": "Cersei Lannister",
           "combatStrength": 1,
-          "towerIcons": 1
+          "towerIcons": 1,
+          "ability": "ser-addam-marbrand-adwd"
         },
         "qyburn-adwd": {
           "name": "Qyburn",
@@ -451,22 +469,26 @@
         "black-walder-adwd": {
           "name": "Black Walder",
           "combatStrength": 2,
-          "swordIcons": 1
+          "swordIcons": 1,
+          "ability": "ramsay-bolton-adwd"
         },
         "roose-bolton-adwd": {
           "name": "Roose Bolton",
           "combatStrength": 4,
-          "swordIcons": 1
+          "swordIcons": 1,
+          "ability": "ramsay-bolton-adwd"
         },
         "damon-dance-for-me-adwd": {
           "name": "Damon Dance-For-Me",
           "combatStrength": 1,
-          "swordIcons": 1
+          "swordIcons": 1,
+          "ability": "ramsay-bolton-adwd"
         },
         "steelshanks-walton-adwd": {
           "name": "Steelshanks Walton",
           "combatStrength": 2,
-          "towerIcons": 1
+          "towerIcons": 1,
+          "ability": "ramsay-bolton-adwd"
         },
         "ramsay-bolton-adwd": {
           "name": "Ramsay Bolton",
@@ -562,10 +584,10 @@
           "combatStrength": 2,
           "towerIcons": 1
         },
-        "quarl-the-maid-adwd": {
-          "name": "Quarl the Maid",
+        "qarl-the-maid-adwd": {
+          "name": "Qarl the Maid",
           "combatStrength": 1,
-          "ability": "quarl-the-maid-adwd"
+          "ability": "qarl-the-maid-adwd"
         },
         "ser-harras-harlaw-adwd": {
           "name": "Ser Harras Harlaw",
