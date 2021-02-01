@@ -13,7 +13,7 @@ export type GameLogData = TurnBegin | SupportDeclared | SupportRefused | Attack 
     | ConsolidatePowerOrderResolved | ArmiesReconciled | EnemyPortTaken | ShipsDestroyedByEmptyCastle
     | HouseCardAbilityNotUsed | PatchfaceUsed | DoranUsed | GerrisUsed
     | TyrionLannisterHouseCardReplaced | TyrionLannisterChoiceMade
-    | ArianneMartellPreventMovement | LorasTyrellAttackOrderMoved | TywinLannisterPowerTokensGained
+    | ArianneMartellPreventMovement | LorasTyrellAttackOrderMoved | TywinLannisterPowerTokensGained | QarlTheMaidPowerTokensGained
     | RooseBoltonHouseCardsReturned | ReekHouseCardsReturned | QueenOfThornsOrderRemoved | QueenOfThornsNoOrderAvailable
     | RenlyBaratheonNoFootmanAvailable | RenlyBaratheonNoKnightAvailable | RenlyBaratheonFootmanUpgradedToKnight
     | MaceTyrellNoFootmanAvailable | MaceTyrellCasualtiesPrevented | MaceTyrellFootmanKilled
@@ -342,6 +342,12 @@ interface QueenOfThornsOrderRemoved {
 
 interface TywinLannisterPowerTokensGained {
     type: "tywin-lannister-power-tokens-gained";
+    house: string;
+    powerTokensGained: number;
+}
+
+interface QarlTheMaidPowerTokensGained {
+    type: "qarl-the-maid-power-tokens-gained";
     house: string;
     powerTokensGained: number;
 }

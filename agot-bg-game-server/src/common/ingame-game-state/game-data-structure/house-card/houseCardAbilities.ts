@@ -42,7 +42,7 @@ import RamsayBoltonAdwdHouseCardAbility from "./RamsayBoltonAdwdHouseCardAbility
 // Greyjoy
 import EuronCrowsEyeAdwdHouseCardAbility from "./EuronCrowsEyeAdwdHouseCardAbility";
 import RodrikTheReaderAdwdHouseCardAbility from "./RodrikTheReaderAdwdHouseCardAbility";
-import QuarlTheMaidAdwdHouseCardAbility from "./QuarlTheMaidAdwdHouseCardAbility";
+import QarlTheMaidAdwdHouseCardAbility from "./QarlTheMaidAdwdHouseCardAbility";
 import AeronDamphairAdwdHouseCardAbility from "./AeronDamphairAdwdHouseCardAbility";
 // Lannister
 import SerIlynPayneAdwdHouseCardAbility from "./SerIlynPayneAdwdHouseCardAbility";
@@ -179,15 +179,15 @@ export const manceRayder = new ManceRayderHouseCardAbility(
 );
 export const jonSnowAdwd = new JonSnowAdwdHouseCardAbility(
     "jon-snow-adwd",
-    "Needs fixing"
+    "If you win this combat, you may decrease or increase the Wildling track by one space (to a minimum of 0 and a maximum of 10)"
 );
 export const melisandreAdwd = new MelisandreAdwdHouseCardAbility(
     "melisandre-adwd",
-    "Needs fixing"
+    "After Combat, you may return any House card in your discard pile (including this card) to your hand by discarding a number of your available Power tokens equal to the printed combat strength of that card."
 );
 export const stannisBaratheonAdwd = new StannisBaratheonAdwdHouseCardAbility(
     "stannis-baratheon-adwd",
-    "Needs fixing"
+    "If you are not being supported in this combat, remove all Support orders (including your own) adjacent to the embattled area, canceling any supporting strength they may have been providing."
 );
 // Martell
 export const quentynMartell = new QuentynMartellHouseCardAbility(
@@ -200,12 +200,12 @@ export const gerrisDrinkwater = new GerrisDrinkwaterHouseCardAbility(
 );
 export const doranMartellAdwd = new DoranMartellAdwdHouseCardAbility(
     "doran-martell-adwd",
-    "Needs fixing"
+    "For each House card in your hand, this card gains a fortification icon and a sword icon, and suffers -1 combat strength (to a minimum of 0)."
 );
 // Stark
 export const reekAdwd = new ReekAdwdHouseCardAbility(
     "reek-adwd",
-    "Needs fixing"
+    "If your Ramysay Bolton House Card is in your discard pile, immediately return it to your hand. If you lose this combat, you may return Reek to your hand."
 );
 export const walderFreyAdwd = new WalderFreyAdwdHouseCardAbility(
     "walder-frey-adwd",
@@ -213,7 +213,7 @@ export const walderFreyAdwd = new WalderFreyAdwdHouseCardAbility(
 );
 export const ramsayBoltonAdwd = new RamsayBoltonAdwdHouseCardAbility(
     "ramsay-bolton-adwd",
-    "Needs fixing"
+    "If your Reek House Card is still in your hand, this card gains +1 combat strength and three sword icons,"
 );
 //Greyjoy
 export const euronCrowsEyeAdwd = new EuronCrowsEyeAdwdHouseCardAbility(
@@ -222,15 +222,15 @@ export const euronCrowsEyeAdwd = new EuronCrowsEyeAdwdHouseCardAbility(
 );
 export const rodrikTheReaderAdwd = new RodrikTheReaderAdwdHouseCardAbility(
     "rodrik-the-reader-adwd",
-    "Needs fixing"
+    "If you win this combar, you may search any Westeros deck for a card of your choice. Shuffle the remaining cards and place the chosen card facedown on top of the deck,"
 );
-export const quarlTheMaidAdwd = new QuarlTheMaidAdwdHouseCardAbility(
-    "quarl-the-maid-adwd",
-    "Needs fixing"
+export const qarlTheMaidAdwd = new QarlTheMaidAdwdHouseCardAbility(
+    "qarl-the-maid-adwd",
+    "If you are attacking and lose this combat, gain three Power tokens."
 );
 export const aeronDamphairAdwd = new AeronDamphairAdwdHouseCardAbility(
     "aeron-damphair-adwd",
-    "Needs fixing"
+    "You may discard any number of your available Power tokens to increase the combat strenght of this card by the number of Power tokens discarded"
 );
 // Lannister
 export const serIlynPayneAdwd = new SerIlynPayneAdwdHouseCardAbility(
@@ -296,7 +296,7 @@ const houseCardAbilities = new BetterMap<string, HouseCardAbility>([
     [ramsayBoltonAdwd.id, ramsayBoltonAdwd],
     [euronCrowsEyeAdwd.id, euronCrowsEyeAdwd],
     [rodrikTheReaderAdwd.id, rodrikTheReaderAdwd],
-    [quarlTheMaidAdwd.id, quarlTheMaidAdwd],
+    [qarlTheMaidAdwd.id, qarlTheMaidAdwd],
     [aeronDamphairAdwd.id, aeronDamphairAdwd],
     [serIlynPayneAdwd.id,serIlynPayneAdwd],
     [serAddamAdwd.id,serAddamAdwd],
