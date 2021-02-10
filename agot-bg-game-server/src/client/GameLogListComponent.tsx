@@ -544,6 +544,14 @@ export default class GameLogListComponent extends Component<GameLogListComponent
                         {affectedHouse.name}</strong> to the bottom of the <strong>{influenceTrack}</strong> track.
                 </>;
             }
+            case "aeron-adwd-bid": {
+                const powerTokens = data.powerTokens
+                const house = data.house
+                return <>
+                    <strong>Aeron Damphair</strong>: <strong>{house}</strong> spent <strong>{powerTokens}</strong> Power Tokens to 
+                    increase it's Combat Strength by <strong>{powerTokens}</strong>.
+                </>;
+            }
             case "gerris-used": {
                 const house = this.game.houses.get(data.house);
                 const influenceTrack = this.game.getNameInfluenceTrack(data.influenceTrack);
