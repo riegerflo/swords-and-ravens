@@ -9,7 +9,6 @@ import {observable} from "mobx";
 import BetterMap from "../../../../utils/BetterMap";
 import User from "../../../../server/User";
 import IngameGameState from "../../IngameGameState";
-import { consolidatePower } from "../../game-data-structure/order-types/orderTypes";
 
 export interface BiddingGameStateParent extends GameState<any, any> {
     game: Game;
@@ -54,11 +53,7 @@ export default class BiddingGameState<ParentGameState extends BiddingGameStatePa
     }
 
     checkAndProceedEndOfBidding(): boolean {
-
-        console.log("Entering BiddingGameState.checkAndProceedEndOfBidding")
-
         if (this.getHousesLeftToBid().length > 0) {
-            console.log("Not all houses have bid yet")
             return false;
         }
 
@@ -85,7 +80,6 @@ export default class BiddingGameState<ParentGameState extends BiddingGameStatePa
 
         const results = _.sortBy(housesPerBid.entries, ([bid, _]) => -bid);
 
-        console.log("calling parent.onBiddingGameStateEnd")
         this.parentGameState.onBiddingGameStateEnd(results);
         return true;
     }
@@ -120,10 +114,7 @@ export default class BiddingGameState<ParentGameState extends BiddingGameStatePa
     }
 
     firstStart(participatingHouses: House[] = []): void {
-        console.log("Entering BiddingGameState.firstStart")
         this.participatingHouses = participatingHouses;
-
-        console.log("Participating houses: ", participatingHouses)
 
         // Already make the bidding for houses that have 0 power tokens
         this.participatingHouses.forEach(h => {
